@@ -19,15 +19,16 @@ CREATE TABLE employee (
 );
 
 -- 3. PAYROLL
-CREATE TABLE payroll (
-    payroll_id NUMBER PRIMARY KEY,
-    emp_id NUMBER,
-    salary NUMBER,
-    tax NUMBER,
-    pay_date DATE,
-
-    FOREIGN KEY (emp_id)
-    REFERENCES employee(emp_id)
+CREATE TABLE payroll ( 
+    payroll_id NUMBER PRIMARY KEY, 
+    emp_id NUMBER, 
+    salary NUMBER, 
+    tax NUMBER, 
+    net_salary NUMBER,
+    pay_date DATE, 
+ 
+    FOREIGN KEY (emp_id) 
+    REFERENCES employee(emp_id) 
 );
 
 -- 4. PROJECT
