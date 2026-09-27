@@ -4,7 +4,6 @@ CREATE TABLE department (
     dept_name VARCHAR2(30) NOT NULL
 );
 
-
 -- 2. EMPLOYEE
 CREATE TABLE employee (
     emp_id NUMBER PRIMARY KEY,
@@ -19,7 +18,6 @@ CREATE TABLE employee (
     REFERENCES department(dept_id)
 );
 
-
 -- 3. PAYROLL
 CREATE TABLE payroll (
     payroll_id NUMBER PRIMARY KEY,
@@ -32,13 +30,11 @@ CREATE TABLE payroll (
     REFERENCES employee(emp_id)
 );
 
-
 -- 4. PROJECT
 CREATE TABLE project (
     project_id NUMBER PRIMARY KEY,
     project_name VARCHAR2(50) NOT NULL
 );
-
 
 -- 5. PROJECT HISTORY
 CREATE TABLE project_history (
@@ -55,7 +51,6 @@ CREATE TABLE project_history (
     REFERENCES project(project_id)
 );
 
-
 -- 6. LEAVE
 CREATE TABLE leave_table (
     leave_id NUMBER PRIMARY KEY,
@@ -67,7 +62,6 @@ CREATE TABLE leave_table (
     FOREIGN KEY (emp_id)
     REFERENCES employee(emp_id)
 );
-
 
 -- 7. ATTENDANCE
 CREATE TABLE attendance (
@@ -94,7 +88,6 @@ CREATE TABLE medical_record (
     REFERENCES employee(emp_id)
 );
 
-
 -- 9. LOAN
 CREATE TABLE loan (
     loan_id NUMBER PRIMARY KEY,
@@ -106,7 +99,6 @@ CREATE TABLE loan (
     FOREIGN KEY (emp_id)
     REFERENCES employee(emp_id)
 );
-
 
 -- 10. JOB HISTORY
 CREATE TABLE job_history (
