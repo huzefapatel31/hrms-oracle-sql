@@ -1,8 +1,3 @@
--- =========================================
--- HRMS DATABASE
--- Oracle SQL
--- =========================================
-
 -- 1. DEPARTMENT
 CREATE TABLE department (
     dept_id NUMBER PRIMARY KEY,
