@@ -39,6 +39,7 @@ EXCEPTION
     WHEN NO_DATA_FOUND THEN
         DBMS_OUTPUT.PUT_LINE('Employee not found.');
 END;
+/
 --------------------------------------------------
 -- 2. EMPLOYEE REGISTRATION
 --------------------------------------------------
@@ -86,6 +87,7 @@ EXCEPTION
     WHEN OTHERS THEN
         DBMS_OUTPUT.PUT_LINE('Registration failed.');
 END;
+/
 --------------------------------------------------
 -- 3. UPDATE EMPLOYEE DETAILS
 --------------------------------------------------
@@ -135,6 +137,7 @@ BEGIN
         DBMS_OUTPUT.PUT_LINE('Employee details updated successfully.');
     END IF;
 END;
+/
 --------------------------------------------------
 -- 4. DELETE EMPLOYEE
 --------------------------------------------------
@@ -176,6 +179,7 @@ EXCEPTION
             'Employee cannot be deleted because related records exit.'
         );
 END;
+/
 --------------------------------------------------
 -- 5. EMPLOYEE CONTACT DIRECTORY
 --------------------------------------------------
@@ -217,3 +221,4 @@ BEGIN
         DBMS_OUTPUT.PUT_LINE('Contact directory displayed successfully.');
     END IF;
 END;
+/
