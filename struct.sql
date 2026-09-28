@@ -31,28 +31,8 @@ CREATE TABLE payroll (
     REFERENCES employee(emp_id) 
 );
 
--- 4. PROJECT
-CREATE TABLE project (
-    project_id NUMBER PRIMARY KEY,
-    project_name VARCHAR2(50) NOT NULL
-);
 
--- 5. PROJECT HISTORY
-CREATE TABLE project_history (
-    history_id NUMBER PRIMARY KEY,
-    emp_id NUMBER,
-    project_id NUMBER,
-    start_date DATE,
-    end_date DATE,
-
-    FOREIGN KEY (emp_id)
-    REFERENCES employee(emp_id),
-
-    FOREIGN KEY (project_id)
-    REFERENCES project(project_id)
-);
-
--- 6. LEAVE
+-- 4. LEAVE
 CREATE TABLE leave_table (
     leave_id NUMBER PRIMARY KEY,
     emp_id NUMBER,
@@ -64,7 +44,7 @@ CREATE TABLE leave_table (
     REFERENCES employee(emp_id)
 );
 
--- 7. ATTENDANCE
+-- 5. ATTENDANCE
 CREATE TABLE attendance (
     att_id NUMBER PRIMARY KEY,
     emp_id NUMBER,
@@ -78,7 +58,7 @@ CREATE TABLE attendance (
 );
 
 
--- 8. MEDICAL RECORD
+-- 6. MEDICAL RECORD
 CREATE TABLE medical_record (
     medical_id NUMBER PRIMARY KEY,
     emp_id NUMBER,
@@ -91,7 +71,7 @@ CREATE TABLE medical_record (
     REFERENCES employee(emp_id)
 );
 
--- 9. LOAN
+--7. LOAN
 CREATE TABLE loan (
     loan_id NUMBER PRIMARY KEY,
     emp_id NUMBER,
@@ -103,7 +83,7 @@ CREATE TABLE loan (
     REFERENCES employee(emp_id)
 );
 
--- 10. JOB HISTORY
+-- 8. JOB HISTORY
 CREATE TABLE job_history (
     job_id NUMBER PRIMARY KEY,
     emp_id NUMBER,
