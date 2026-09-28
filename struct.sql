@@ -72,7 +72,9 @@ CREATE TABLE attendance (
     status VARCHAR2(10),
 
     FOREIGN KEY (emp_id)
-    REFERENCES employee(emp_id)
+    REFERENCES employee(emp_id),
+
+    CONSTRAINT uq_att_emp_date UNIQUE (emp_id, att_date)
 );
 
 
