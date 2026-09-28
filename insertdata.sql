@@ -205,31 +205,31 @@ INSERT INTO job_history
 (job_id, emp_id, job_title, start_date, end_date)
 VALUES
 (seqid_job.NEXTVAL, 101, 'Software Developer',
- TO_DATE('01/10/2026','DD/MM/YYYY'), NULL);
+ TO_DATE('01/08/2026','DD/MM/YYYY'), NULL);
 
 INSERT INTO job_history
 (job_id, emp_id, job_title, start_date, end_date)
 VALUES
 (seqid_job.NEXTVAL, 102, 'Web Developer',
- TO_DATE('01/10/2026','DD/MM/YYYY'), NULL);
+ TO_DATE('01/08/2026','DD/MM/YYYY'), NULL);
 
 INSERT INTO job_history
 (job_id, emp_id, job_title, start_date, end_date)
 VALUES
 (seqid_job.NEXTVAL, 103, 'System Analyst',
- TO_DATE('01/10/2026','DD/MM/YYYY'), NULL);
+ TO_DATE('01/08/2026','DD/MM/YYYY'), NULL);
 
 INSERT INTO job_history
 (job_id, emp_id, job_title, start_date, end_date)
 VALUES
 (seqid_job.NEXTVAL, 104, 'Database Developer',
- TO_DATE('01/10/2026','DD/MM/YYYY'), NULL);
+ TO_DATE('01/08/2026','DD/MM/YYYY'), NULL);
 
 INSERT INTO job_history
 (job_id, emp_id, job_title, start_date, end_date)
 VALUES
 (seqid_job.NEXTVAL, 105, 'Network Engineer',
- TO_DATE('01/10/2026','DD/MM/YYYY'), NULL);
+ TO_DATE('01/08/2026','DD/MM/YYYY'), NULL);
 
 ---------------------------------------------------------------
 -- Department 2: Finance
@@ -238,31 +238,31 @@ INSERT INTO job_history
 (job_id, emp_id, job_title, start_date, end_date)
 VALUES
 (seqid_job.NEXTVAL, 106, 'Financial Analyst',
- TO_DATE('01/10/2026','DD/MM/YYYY'), NULL);
+ TO_DATE('01/08/2026','DD/MM/YYYY'), NULL);
 
 INSERT INTO job_history
 (job_id, emp_id, job_title, start_date, end_date)
 VALUES
 (seqid_job.NEXTVAL, 107, 'Accountant',
- TO_DATE('01/10/2026','DD/MM/YYYY'), NULL);
+ TO_DATE('01/08/2026','DD/MM/YYYY'), NULL);
 
 INSERT INTO job_history
 (job_id, emp_id, job_title, start_date, end_date)
 VALUES
 (seqid_job.NEXTVAL, 108, 'Finance Executive',
- TO_DATE('01/10/2026','DD/MM/YYYY'), NULL);
+ TO_DATE('01/08/2026','DD/MM/YYYY'), NULL);
 
 INSERT INTO job_history
 (job_id, emp_id, job_title, start_date, end_date)
 VALUES
 (seqid_job.NEXTVAL, 109, 'Accounts Manager',
- TO_DATE('01/10/2026','DD/MM/YYYY'), NULL);
+ TO_DATE('01/08/2026','DD/MM/YYYY'), NULL);
 
 INSERT INTO job_history
 (job_id, emp_id, job_title, start_date, end_date)
 VALUES
 (seqid_job.NEXTVAL, 110, 'Finance Officer',
- TO_DATE('01/10/2026','DD/MM/YYYY'), NULL);
+ TO_DATE('01/08/2026','DD/MM/YYYY'), NULL);
 
 --------------------------------------------------------------------------
 -- Department 3: Human Resources
@@ -271,31 +271,31 @@ INSERT INTO job_history
 (job_id, emp_id, job_title, start_date, end_date)
 VALUES
 (seqid_job.NEXTVAL, 111, 'HR Executive',
- TO_DATE('01/10/2026','DD/MM/YYYY'), NULL);
+ TO_DATE('01/08/2026','DD/MM/YYYY'), NULL);
 
 INSERT INTO job_history
 (job_id, emp_id, job_title, start_date, end_date)
 VALUES
 (seqid_job.NEXTVAL, 112, 'Recruitment Executive',
- TO_DATE('01/10/2026','DD/MM/YYYY'), NULL);
+ TO_DATE('01/08/2026','DD/MM/YYYY'), NULL);
 
 INSERT INTO job_history
 (job_id, emp_id, job_title, start_date, end_date)
 VALUES
 (seqid_job.NEXTVAL, 113, 'HR Coordinator',
- TO_DATE('01/10/2026','DD/MM/YYYY'), NULL);
+ TO_DATE('01/08/2026','DD/MM/YYYY'), NULL);
 
 INSERT INTO job_history
 (job_id, emp_id, job_title, start_date, end_date)
 VALUES
 (seqid_job.NEXTVAL, 114, 'Training Officer',
- TO_DATE('01/10/2026','DD/MM/YYYY'), NULL);
+ TO_DATE('01/08/2026','DD/MM/YYYY'), NULL);
 
 INSERT INTO job_history
 (job_id, emp_id, job_title, start_date, end_date)
 VALUES
 (seqid_job.NEXTVAL, 115, 'HR Manager',
- TO_DATE('01/10/2026','DD/MM/YYYY'), NULL);
+ TO_DATE('01/08/2026','DD/MM/YYYY'), NULL);
 
 ---------------------------------------------------------------------------------------
 -- Department 4: Administration
@@ -304,30 +304,30 @@ INSERT INTO job_history
 (job_id, emp_id, job_title, start_date, end_date)
 VALUES
 (seqid_job.NEXTVAL, 116, 'Administrator',
- TO_DATE('01/10/2026','DD/MM/YYYY'), NULL);
+ TO_DATE('01/08/2026','DD/MM/YYYY'), NULL);
 
 INSERT INTO job_history
 (job_id, emp_id, job_title, start_date, end_date)
 VALUES
 (seqid_job.NEXTVAL, 117, 'Office Executive',
- TO_DATE('01/10/2026','DD/MM/YYYY'), NULL);
+ TO_DATE('01/08/2026','DD/MM/YYYY'), NULL);
 
 INSERT INTO job_history
 (job_id, emp_id, job_title, start_date, end_date)
 VALUES
 (seqid_job.NEXTVAL, 118, 'Admin Officer',
- TO_DATE('01/10/2026','DD/MM/YYYY'), NULL);
+ TO_DATE('01/08/2026','DD/MM/YYYY'), NULL);
 
 INSERT INTO job_history
 (job_id, emp_id, job_title, start_date, end_date)
 VALUES
 (seqid_job.NEXTVAL, 119, 'Office Manager',
- TO_DATE('01/10/2026','DD/MM/YYYY'), NULL);
+ TO_DATE('01/08/2026','DD/MM/YYYY'), NULL);
 
 INSERT INTO job_history
 (job_id, emp_id, job_title, start_date, end_date)
 VALUES
 (seqid_job.NEXTVAL, 120, 'Administrative Officer',
- TO_DATE('01/10/2026','DD/MM/YYYY'), NULL);
+ TO_DATE('01/08/2026','DD/MM/YYYY'), NULL);
 -----------------------------------------------------------------------------------------------------------------------------------------------
 COMMIT;
