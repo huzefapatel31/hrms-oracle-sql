@@ -163,7 +163,7 @@ INSERT INTO leave_table (leave_id, emp_id, leave_date, reason, status) VALUES (s
 INSERT INTO leave_table (leave_id, emp_id, leave_date, reason, status) VALUES (seqid_leave.NEXTVAL, 117, TO_DATE('28/09/2026','DD/MM/YYYY'), 'Personal', 'Pending');
 INSERT INTO leave_table (leave_id, emp_id, leave_date, reason, status) VALUES (seqid_leave.NEXTVAL, 118, TO_DATE('29/09/2026','DD/MM/YYYY'), 'Casual Leave', 'Approved');
 INSERT INTO leave_table (leave_id, emp_id, leave_date, reason, status) VALUES (seqid_leave.NEXTVAL, 119, TO_DATE('30/09/2026','DD/MM/YYYY'), 'Family Function', 'Rejected');
-INSERT INTO leave_table (leave_id, emp_id, leave_date, reason, status) VALUES (seqid_leave.NEXTVAL, 120, TO_DATE('31/09/2026','DD/MM/YYYY'), 'Sick Leave', 'Approved');
+INSERT INTO leave_table (leave_id, emp_id, leave_date, reason, status) VALUES (seqid_leave.NEXTVAL, 120, TO_DATE('30/09/2026','DD/MM/YYYY'), 'Sick Leave', 'Approved');
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- 8. MEDICAL RECORD (one row per employee)
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
