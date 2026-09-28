@@ -94,7 +94,27 @@ CREATE TABLE job_history (
     FOREIGN KEY (emp_id)
     REFERENCES employee(emp_id)
 );
+-- 9. PROJECT
+CREATE TABLE project (
+    project_id NUMBER PRIMARY KEY,
+    project_name VARCHAR2(50) NOT NULL
+);
 
+
+-- 10. PROJECT HISTORY
+CREATE TABLE project_history (
+    history_id NUMBER PRIMARY KEY,
+    emp_id NUMBER,
+    project_id NUMBER,
+    start_date DATE,
+    end_date DATE,
+
+    FOREIGN KEY (emp_id)
+    REFERENCES employee(emp_id),
+
+    FOREIGN KEY (project_id)
+    REFERENCES project(project_id)
+);
 
 
 
