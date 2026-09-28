@@ -116,12 +116,12 @@ BEGIN
     IF cnt = 0 THEN
         DBMS_OUTPUT.PUT_LINE('No employee records found.');
     ELSE
-        DBMS_OUTPUT.PUT_LINE('Employee ID  Name  Contact  Email');
-        FOR e IN (SELECT emp_id, emp_name, contact, email FROM employee ORDER BY emp_id)
-        LOOP
-            DBMS_OUTPUT.PUT_LINE(e.emp_id || '  ' || e.emp_name || '  ' || e.contact || '  ' || e.email);
-        END LOOP;
-        DBMS_OUTPUT.PUT_LINE('Contact directory displayed successfully.');
-    END IF;
+       SELECT emp_id,
+       emp_name,
+       contact,
+       email
+    FROM employee
+    ORDER BY emp_id;
+
 END;
 /
