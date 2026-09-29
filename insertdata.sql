@@ -11,124 +11,131 @@ CREATE SEQUENCE seqid_att START WITH 1 INCREMENT BY 1;
 CREATE SEQUENCE seqid_medical START WITH 1 INCREMENT BY 1;
 CREATE SEQUENCE seqid_loan START WITH 1 INCREMENT BY 1;
 CREATE SEQUENCE seqid_job START WITH 1 INCREMENT BY 1;
+Here is the complete script with all employee `join_date` values changed to **01 July 2026**.
 
+```
 -----------------------------------------------------------------------------------------------------------------------------------
 -- 1. DEPARTMENT
-----------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------
 INSERT INTO department (dept_id, dept_name) VALUES (seqid_dept.NEXTVAL, 'Information Technology');
 INSERT INTO department (dept_id, dept_name) VALUES (seqid_dept.NEXTVAL, 'Finance');
 INSERT INTO department (dept_id, dept_name) VALUES (seqid_dept.NEXTVAL, 'Human Resources');
 INSERT INTO department (dept_id, dept_name) VALUES (seqid_dept.NEXTVAL, 'Administration');
--------------------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------------
 -- 2. EMPLOYEE
-----------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------
+
 -- Department 1: Information Technology
---------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------
 INSERT INTO employee (emp_id, emp_name, contact, email, address, join_date, dept_id)
 VALUES (seqid_emp.NEXTVAL, 'Aarav Sharma', '9876500001', 'aarav.sharma@orbit.com',
  'Flat 101, Shree Residency, Nagpur, Maharashtra - 440015',
- TO_DATE('01/10/2026','DD/MM/YYYY'), 1);
+ TO_DATE('01/07/2026','DD/MM/YYYY'), 1);
 
 INSERT INTO employee (emp_id, emp_name, contact, email, address, join_date, dept_id)
 VALUES (seqid_emp.NEXTVAL, 'Priya Verma', '9876500002', 'priya.verma@orbit.com',
  'Flat 202, Green Heights, Pune, Maharashtra - 411045',
- TO_DATE('01/10/2026','DD/MM/YYYY'), 1);
+ TO_DATE('01/07/2026','DD/MM/YYYY'), 1);
 
 INSERT INTO employee (emp_id, emp_name, contact, email, address, join_date, dept_id)
 VALUES (seqid_emp.NEXTVAL, 'Rohan Patil', '9876500003', 'rohan.patil@orbit.com',
  'Flat 303, Andheri Heights, Mumbai, Maharashtra - 400069',
- TO_DATE('01/10/2026','DD/MM/YYYY'), 1);
+ TO_DATE('01/07/2026','DD/MM/YYYY'), 1);
 
 INSERT INTO employee (emp_id, emp_name, contact, email, address, join_date, dept_id)
 VALUES (seqid_emp.NEXTVAL, 'Sneha Joshi', '9876500004', 'sneha.joshi@orbit.com',
  'House 14, College Road, Nashik, Maharashtra - 422005',
- TO_DATE('01/10/2026','DD/MM/YYYY'), 1);
+ TO_DATE('01/07/2026','DD/MM/YYYY'), 1);
 
 INSERT INTO employee (emp_id, emp_name, contact, email, address, join_date, dept_id)
 VALUES (seqid_emp.NEXTVAL, 'Vikram Deshmukh', '9876500005', 'vikram.deshmukh@orbit.com',
  'Flat 405, Orange City Apartments, Nagpur, Maharashtra - 440015',
- TO_DATE('01/10/2026','DD/MM/YYYY'), 1);
-------------------------------------------------------------------------------------------------------------
+ TO_DATE('01/07/2026','DD/MM/YYYY'), 1);
+
+-----------------------------------------------------------------------------------------------------------------------------------
 -- Department 2: Finance
--------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------
 INSERT INTO employee (emp_id, emp_name, contact, email, address, join_date, dept_id)
 VALUES (seqid_emp.NEXTVAL, 'Karan Shah', '9876500011', 'karan.shah@orbit.com',
  'Flat 111, Sunrise Residency, Pune, Maharashtra - 411014',
- TO_DATE('01/10/2026','DD/MM/YYYY'), 2);
+ TO_DATE('01/07/2026','DD/MM/YYYY'), 2);
 
 INSERT INTO employee (emp_id, emp_name, contact, email, address, join_date, dept_id)
 VALUES (seqid_emp.NEXTVAL, 'Pooja Nair', '9876500012', 'pooja.nair@orbit.com',
  'Flat 212, Palm Residency, Mumbai, Maharashtra - 400076',
- TO_DATE('01/10/2026','DD/MM/YYYY'), 2);
+ TO_DATE('01/07/2026','DD/MM/YYYY'), 2);
 
 INSERT INTO employee (emp_id, emp_name, contact, email, address, join_date, dept_id)
 VALUES (seqid_emp.NEXTVAL, 'Manish Yadav', '9876500013', 'manish.yadav@orbit.com',
  'House 33, Civil Lines, Nagpur, Maharashtra - 440001',
- TO_DATE('01/10/2026','DD/MM/YYYY'), 2);
+ TO_DATE('01/07/2026','DD/MM/YYYY'), 2);
 
 INSERT INTO employee (emp_id, emp_name, contact, email, address, join_date, dept_id)
 VALUES (seqid_emp.NEXTVAL, 'Riya Kapoor', '9876500014', 'riya.kapoor@orbit.com',
  'Flat 414, Metro Heights, New Delhi - 110075',
- TO_DATE('01/10/2026','DD/MM/YYYY'), 2);
+ TO_DATE('01/07/2026','DD/MM/YYYY'), 2);
 
 INSERT INTO employee (emp_id, emp_name, contact, email, address, join_date, dept_id)
 VALUES (seqid_emp.NEXTVAL, 'Suresh Pawar', '9876500015', 'suresh.pawar@orbit.com',
  'House 45, College Road, Nashik, Maharashtra - 422005',
- TO_DATE('01/10/2026','DD/MM/YYYY'), 2);
-------------------------------------------------------------------------------------------------------
+ TO_DATE('01/07/2026','DD/MM/YYYY'), 2);
+
+-----------------------------------------------------------------------------------------------------------------------------------
 -- Department 3: Human Resources
----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------
 INSERT INTO employee (emp_id, emp_name, contact, email, address, join_date, dept_id)
 VALUES (seqid_emp.NEXTVAL, 'Deepak Sharma', '9876500021', 'deepak.sharma@orbit.com',
  'Flat 121, Civil Lines Residency, Nagpur, Maharashtra - 440001',
- TO_DATE('01/10/2026','DD/MM/YYYY'), 3);
+ TO_DATE('01/07/2026','DD/MM/YYYY'), 3);
 
 INSERT INTO employee (emp_id, emp_name, contact, email, address, join_date, dept_id)
 VALUES (seqid_emp.NEXTVAL, 'Isha Verma', '9876500022', 'isha.verma@orbit.com',
  'Flat 222, Aundh Residency, Pune, Maharashtra - 411007',
- TO_DATE('01/10/2026','DD/MM/YYYY'), 3);
+ TO_DATE('01/07/2026','DD/MM/YYYY'), 3);
 
 INSERT INTO employee (emp_id, emp_name, contact, email, address, join_date, dept_id)
 VALUES (seqid_emp.NEXTVAL, 'Mohit Patil', '9876500023', 'mohit.patil@orbit.com',
  'Flat 323, Thane Heights, Thane, Maharashtra - 400601',
- TO_DATE('01/10/2026','DD/MM/YYYY'), 3);
+ TO_DATE('01/07/2026','DD/MM/YYYY'), 3);
 
 INSERT INTO employee (emp_id, emp_name, contact, email, address, join_date, dept_id)
 VALUES (seqid_emp.NEXTVAL, 'Tanvi Joshi', '9876500024', 'tanvi.joshi@orbit.com',
  'House 18, College Road, Nashik, Maharashtra - 422005',
- TO_DATE('01/10/2026','DD/MM/YYYY'), 3);
+ TO_DATE('01/07/2026','DD/MM/YYYY'), 3);
 
 INSERT INTO employee (emp_id, emp_name, contact, email, address, join_date, dept_id)
 VALUES (seqid_emp.NEXTVAL, 'Akash More', '9876500025', 'akash.more@orbit.com',
  'Flat 525, Shivaji Nagar, Pune, Maharashtra - 411005',
- TO_DATE('01/10/2026','DD/MM/YYYY'), 3);
----------------------------------------------------------------------------------
+ TO_DATE('01/07/2026','DD/MM/YYYY'), 3);
+
+-----------------------------------------------------------------------------------------------------------------------------------
 -- Department 4: Administration
---------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------
 INSERT INTO employee (emp_id, emp_name, contact, email, address, join_date, dept_id)
 VALUES (seqid_emp.NEXTVAL, 'Nitin Kale', '9876500031', 'nitin.kale@orbit.com',
  'Flat 131, Model Colony, Nagpur, Maharashtra - 440033',
- TO_DATE('01/10/2026','DD/MM/YYYY'), 4);
+ TO_DATE('01/07/2026','DD/MM/YYYY'), 4);
 
 INSERT INTO employee (emp_id, emp_name, contact, email, address, join_date, dept_id)
 VALUES (seqid_emp.NEXTVAL, 'Snehal Patil', '9876500032', 'snehal.patil@orbit.com',
  'Flat 232, Kothrud, Pune, Maharashtra - 411038',
- TO_DATE('01/10/2026','DD/MM/YYYY'), 4);
+ TO_DATE('01/07/2026','DD/MM/YYYY'), 4);
 
 INSERT INTO employee (emp_id, emp_name, contact, email, address, join_date, dept_id)
 VALUES (seqid_emp.NEXTVAL, 'Ravi Bhosale', '9876500033', 'ravi.bhosale@orbit.com',
  'House 32, Deolali, Nashik, Maharashtra - 422401',
- TO_DATE('01/10/2026','DD/MM/YYYY'), 4);
+ TO_DATE('01/07/2026','DD/MM/YYYY'), 4);
 
 INSERT INTO employee (emp_id, emp_name, contact, email, address, join_date, dept_id)
 VALUES (seqid_emp.NEXTVAL, 'Komal Shinde', '9876500034', 'komal.shinde@orbit.com',
  'Flat 434, Andheri West, Mumbai, Maharashtra - 400058',
- TO_DATE('01/10/2026','DD/MM/YYYY'), 4);
+ TO_DATE('01/07/2026','DD/MM/YYYY'), 4);
 
 INSERT INTO employee (emp_id, emp_name, contact, email, address, join_date, dept_id)
 VALUES (seqid_emp.NEXTVAL, 'Ganesh Wagh', '9876500035', 'ganesh.wagh@orbit.com',
  'House 55, Sector 10, Chandigarh - 160010',
- TO_DATE('01/10/2026','DD/MM/YYYY'), 4);
+ TO_DATE('01/07/2026','DD/MM/YYYY'), 4);
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 -- 4. PROJECT
 ------------------------------------------------------------------------------------------------------------------------------------------------------
