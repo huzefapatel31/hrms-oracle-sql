@@ -11,9 +11,6 @@ CREATE SEQUENCE seqid_att START WITH 1 INCREMENT BY 1;
 CREATE SEQUENCE seqid_medical START WITH 1 INCREMENT BY 1;
 CREATE SEQUENCE seqid_loan START WITH 1 INCREMENT BY 1;
 CREATE SEQUENCE seqid_job START WITH 1 INCREMENT BY 1;
-Here is the complete script with all employee `join_date` values changed to **01 July 2026**.
-
-```
 -----------------------------------------------------------------------------------------------------------------------------------
 -- 1. DEPARTMENT
 -----------------------------------------------------------------------------------------------------------------------------------
