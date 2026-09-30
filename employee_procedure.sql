@@ -101,7 +101,6 @@ EXCEPTION
         DBMS_OUTPUT.PUT_LINE('Employee cannot be deleted because related records exist.');
 END;
 /
-
 --------------------------------------------------
 -- 5. EMPLOYEE CONTACT DIRECTORY
 --------------------------------------------------
@@ -114,12 +113,40 @@ BEGIN
     IF cnt = 0 THEN
         DBMS_OUTPUT.PUT_LINE('No employee records found.');
     ELSE
-       SELECT emp_id,
-       emp_name,
-       contact,
-       email
-    FROM employee
-    ORDER BY emp_id;
 
+        DBMS_OUTPUT.PUT_LINE(
+            '--------------------------------------------------------------------------'
+        );
+
+        DBMS_OUTPUT.PUT_LINE(
+            RPAD('ID', 8) ||
+            RPAD('NAME', 25) ||
+            RPAD('CONTACT', 15) ||
+            RPAD('EMAIL', 30)
+        );
+
+        DBMS_OUTPUT.PUT_LINE(
+            '--------------------------------------------------------------------------'
+        );
+
+        FOR e IN (
+            SELECT emp_id, emp_name, contact, email
+            FROM employee
+            ORDER BY emp_id
+        )
+        LOOP
+            DBMS_OUTPUT.PUT_LINE(
+                RPAD(e.emp_id, 8) ||
+                RPAD(e.emp_name, 25) ||
+                RPAD(e.contact, 15) ||
+                RPAD(e.email, 30)
+            );
+        END LOOP;
+
+        DBMS_OUTPUT.PUT_LINE(
+            '--------------------------------------------------------------------------'
+        );
+
+    END IF;
 END;
 /
